@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+#object1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: blue;
+    
+}
+@keyframes animation1 {
+    0% {transform: translateX(0px);}
+    25% {transform: translateX(1000px);}
+    50% {transform: translateX(1000px) translateY(600px);}
+    75% {transform: translateX(0px) translateY(600px);}
+    100% {transform: translateX(0px) translateY(0px);}
+}
+@keyframes animation2 {
+    0% {background: blue;}
+    50% {background: pink;}
+    100% {background: orange;}
+}
+</style>
+</head>
+<body>
+    <div id="object1"></div>
+    <script>
+        
+    </script>
+    <button onclick='object1.style.animation="animation1 2s ease infinite,animation2 2s ease infinite"'>Animate</button>
+</body>
+</html>
+

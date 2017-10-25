@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+#object1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: blue;
+    float:left;
+}
+#object2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: green;
+    float:left;
+}
+#object3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: red;
+    float:left;
+}
+#object4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: purple;
+    float:left;
+}
+#object5 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: orange;
+    float:left;
+}
+#object6 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: brown;
+    float:left;
+    
+}
+#object7 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: pink;
+    float:left;
+}
+#object8 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: tomato;
+    float:left;
+}
+#vacuum {
+    height: 200px;
+    
+}
+#vacuum2 {
+    height: 1000px;
+    width: 200px;
+    float: left;
+}
+@keyframes animation1 {
+    0% {transform: translateY(0px) translateX(0px);}
+    5% {transform: translateY(0px) translateX(0px);}
+    10% {transform: translateY(0px) translateX(0px);}
+    15% {transform: translateY(0px) translateX(0px);}
+    20% {transform: translateY(0px) translateX(0px);}
+    25% {transform: translateY(0px) translateX(0px);}
+    30% {transform: translateY(0px) translateX(0px);}
+    35% {transform: translateY(0px) translateX(0px);}
+    40% {transform: translateY(0px) translateX(0px);}
+    45% {transform: translateY(0px) translateX(0px);}
+    50% {transform: translateY(0px) translateX(0px);}
+    55% {transform: translateY(0px) translateX(0px);}
+    60% {transform: translateY(0px) translateX(0px);}
+    65% {transform: translateY(0px) translateX(0px);}
+    70% {transform: translateY(0px) translateX(-25px);}
+    75% {transform: translateY(0px) translateX(-25px);}
+    80% {transform: translateY(0px) translateX(-25px);}
+    85% {transform: translateY(0px) translateX(-25px);}
+    90% {transform: translateY(0px) translateX(-25px);}
+    95% {transform: translateY(0px) translateX(-25px);}
+    100% {transform: translateY(0px) translateX(-25px);}
+}
+
+@keyframes animation2 {
+    0% {transform: translateY(0px) translateX(0px);}
+    5% {transform: translateY(0px) translateX(0px);}
+    10% {transform: translateY(0px) translateX(0px);}
+    15% {transform: translateY(70px) translateX(0px);}
+    20% {transform: translateY(70px) translateX(0px);}
+    25% {transform: translateY(70px) translateX(0px);}
+    30% {transform: translateY(70px) translateX(0px);}
+    35% {transform: translateY(70px) translateX(0px);}
+    40% {transform: translateY(70px) translateX(200px);}
+    45% {transform: translateY(0px) translateX(200px);}
+    50% {transform: translateY(0px) translateX(200px);}
+    55% {transform: translateY(0px) translateX(200px);}
+    60% {transform: translateY(0px) translateX(200px);}
+    65% {transform: translateY(0px) translateX(200px);}
+    70% {transform: translateY(0px) translateX(225px);}
+    75% {transform: translateY(-70px) translateX(225px);}
+    80% {transform: translateY(-70px) translateX(175px);}
+    85% {transform: translateY(-70px) translateX(175px);}
+    90% {transform: translateY(-70px) translateX(325px);}
+    95% {transform: translateY(-70px) translateX(275px);}
+    100% {transform: translateY(-70px) translateX(275px);}
+}
+@keyframes animation3 {
+    0% {transform: translateY(0px) translateX(0px);}
+    5% {transform: translateY(0px) translateX(0px);}
+    10% {transform: translateY(0px) translateX(0px);}
+    15% {transform: translateY(0px) translateX(0px);}
+    20% {transform: translateY(0px) translateX(0px);}
+    25% {transform: translateY(0px) translateX(0px);}
+    30% {transform: translateY(0px) translateX(0px);}
+    35% {transform: translateY(0px) translateX(0px);}
+    40% {transform: translateY(0px) translateX(0px);}
+    45% {transform: translateY(0px) translateX(0px);}
+    50% {transform: translateY(0px) translateX(0px);}
+    55% {transform: translateY(0px) translateX(0px);}
+    60% {transform: translateY(0px) translateX(0px);}
+    65% {transform: translateY(0px) translateX(0px);}
+    70% {transform: translateY(0px) translateX(-25px);}
+    75% {transform: translateY(0px) translateX(-25px);}
+    80% {transform: translateY(0px) translateX(-25px);}
+    85% {transform: translateY(0px) translateX(-25px);}
+    90% {transform: translateY(0px) translateX(-25px);}
+    95% {transform: translateY(0px) translateX(-25px);}
+    100% {transform: translateY(0px) translateX(-25px);}
+}
+@keyframes animation4 {
+    0%  {transform: translateY(0px) translateX(0px);}
+    2.5%{transform: translateY(-70px) translateX(0px);}
+    5%  {transform: translateY(-70px) translateX(-150px);}
+    10% {transform: translateY(-70px) translateX(-100px);}
+    15% {transform: translateY(-70px) translateX(-100px);}
+    20% {transform: translateY(-70px) translateX(200px);}
+    25% {transform: translateY(-70px) translateX(150px);}
+    30% {transform: translateY(-70px) translateX(100px);}
+    35% {transform: translateY(-70px) translateX(100px);}
+    40% {transform: translateY(-70px) translateX(100px);}
+    45% {transform: translateY(-70px) translateX(100px);}
+    50% {transform: translateY(-70px) translateX(50px);}
+    55%  {transform: translateY(-70px) translateX(-50px);}
+    60%  {transform: translateY(-70px) translateX(0px);}
+    65%  {transform: translateY(0px) translateX(0px);}
+    70%  {transform: translateY(0px) translateX(-25px);}
+    75%  {transform: translateY(0px) translateX(-25px);}
+    80%  {transform: translateY(0px) translateX(-25px);}
+    85%  {transform: translateY(0px) translateX(-25px);}
+    90%  {transform: translateY(0px) translateX(-25px);}
+    95%  {transform: translateY(0px) translateX(-25px);}
+    100%  {transform: translateY(0px) translateX(-25px);}
+}
+@keyframes animation5 {
+    0% {transform: translateY(0px) translateX(0px);}
+    5% {transform: translateY(0px) translateX(0px);}
+    10% {transform: translateY(0px) translateX(0px);}
+    15% {transform: translateY(0px) translateX(0px);}
+    20% {transform: translateY(0px) translateX(0px);}
+    25% {transform: translateY(0px) translateX(0px);}
+    30% {transform: translateY(0px) translateX(0px);}
+    35% {transform: translateY(0px) translateX(0px);}
+    40% {transform: translateY(0px) translateX(0px);}
+    45% {transform: translateY(0px) translateX(0px);}
+    50% {transform: translateY(0px) translateX(0px);}
+    55% {transform: translateY(0px) translateX(0px);}
+    60% {transform: translateY(0px) translateX(0px);}
+    65% {transform: translateY(0px) translateX(0px);}
+    70% {transform: translateY(0px) translateX(25px);}
+    75% {transform: translateY(0px) translateX(25px);}
+    80% {transform: translateY(0px) translateX(25px);}
+    85% {transform: translateY(70px) translateX(25px);}
+    90% {transform: translateY(70px) translateX(25px);}
+    95% {transform: translateY(70px) translateX(25px);}
+    100% {transform: translateY(70px) translateX(25px);}
+}
+@keyframes animation6 {
+    0%{transform: translateY(0px) translateX(0px);}
+    5% {transform: translateY(0px) translateX(0px);}
+    10% {transform: translateY(0px) translateX(0px);}
+    15% {transform: translateY(0px) translateX(0px);}
+    20% {transform: translateY(0px) translateX(0px);}
+    25% {transform: translateY(0px) translateX(0px);}
+    30% {transform: translateY(0px) translateX(0px);}
+    35% {transform: translateY(70px) translateX(0px);}
+    40% {transform: translateY(70px) translateX(-200px);}
+    45% {transform: translateY(0px) translateX(-200px);}
+    50% {transform: translateY(0px) translateX(-200px);}
+    55% {transform: translateY(0px) translateX(-200px);}
+    60% {transform: translateY(0px) translateX(-200px);}
+    65% {transform: translateY(0px) translateX(-200px);}
+    70% {transform: translateY(0px) translateX(-225px);}
+    75% {transform: translateY(0px) translateX(-225px);}
+    80% {transform: translateY(0px) translateX(-225px);}
+    85% {transform: translateY(0px) translateX(-225px);}
+    90% {transform: translateY(0px) translateX(-225px);}
+    95% {transform: translateY(0px) translateX(-225px);}
+    100% {transform: translateY(0px) translateX(-225px);}
+}
+@keyframes animation7 {
+    0% {transform: translateY(0px) translateX(0px);}
+    5% {transform: translateY(0px) translateX(0px);}
+    10% {transform: translateY(0px) translateX(0px);}
+    15% {transform: translateY(0px) translateX(0px);}
+    20% {transform: translateY(0px) translateX(0px);}
+    25% {transform: translateY(0px) translateX(0px);}
+    30% {transform: translateY(0px) translateX(0px);}
+    35% {transform: translateY(0px) translateX(0px);}
+    40% {transform: translateY(0px) translateX(0px);}
+    45% {transform: translateY(0px) translateX(0px);}
+    50% {transform: translateY(0px) translateX(0px);}
+    55% {transform: translateY(0px) translateX(0px);}
+    60% {transform: translateY(0px) translateX(0px);}
+    65% {transform: translateY(0px) translateX(0px);}
+    70% {transform: translateY(0px) translateX(25px);}
+    75% {transform: translateY(0px) translateX(25px);}
+    80% {transform: translateY(0px) translateX(25px);}
+    85% {transform: translateY(0px) translateX(25px);}
+    90% {transform: translateY(0px) translateX(25px);}
+    95% {transform: translateY(0px) translateX(25px);}
+    100% {transform: translateY(70px) translateX(25px);}
+}
+@keyframes animation8 {
+    0% {transform: translateY(0px) translateX(0px);}
+    5% {transform: translateY(0px) translateX(0px);}
+    10% {transform: translateY(0px) translateX(0px);}
+    15% {transform: translateY(0px) translateX(0px);}
+    20% {transform: translateY(0px) translateX(0px);}
+    25% {transform: translateY(0px) translateX(0px);}
+    30% {transform: translateY(0px) translateX(0px);}
+    35% {transform: translateY(0px) translateX(0px);}
+    40% {transform: translateY(0px) translateX(0px);}
+    45% {transform: translateY(0px) translateX(0px);}
+    50% {transform: translateY(0px) translateX(0px);}
+    55% {transform: translateY(0px) translateX(0px);}
+    60% {transform: translateY(0px) translateX(0px);}
+    65% {transform: translateY(0px) translateX(0px);}
+    70% {transform: translateY(0px) translateX(25px);}
+    75% {transform: translateY(0px) translateX(25px);}
+    80% {transform: translateY(0px) translateX(25px);}
+    85% {transform: translateY(0px) translateX(25px);}
+    90% {transform: translateY(0px) translateX(25px);}
+    95% {transform: translateY(0px) translateX(25px);}
+    100% {transform: translateY(0px) translateX(25px);}
+}
+</style>
+</head>
+<body>
+    <div id="vacuum"></div>
+    <div id="vacuum2"></div>
+    <div id="object1"></div>
+    <div id="object2"></div>
+    <div id="object3"></div>
+    <div id="object4"></div>
+    <div id="object5"></div>
+    <div id="object6"></div>
+    <div id="object7"></div>
+    <div id="object8"></div>
+    <script>
+        
+        object1.style.animation="animation1 20s ease 1 normal running 0s forwards";
+        object2.style.animation="animation2 20s ease 1 normal running 0s forwards";
+        object3.style.animation="animation3 20s ease 1 normal running 0s forwards";
+        object4.style.animation="animation4 20s ease 1 normal running 0s forwards";
+        object5.style.animation="animation5 20s ease 1 normal running 0s forwards";
+        object6.style.animation="animation6 20s ease 1 normal running 0s forwards";
+        object7.style.animation="animation7 20s ease 1 normal running 0s forwards";
+        object8.style.animation="animation8 20s ease 1 normal running 0s forwards";
+    </script>
+    
+</body>
+</html>
+
+    50%  {transform: translateY(0px) translateX(0px);}
+    52.5%  {transform: translateY(0px) translateX(0px);}
+    55%   {transform: translateY(0px) translateX(0px);}
+    57.5% {transform: translateY(0px) translateX(0px);}
+    60%   {transform: translateY(0px) translateX(0px);}
+    62.5% {transform: translateY(0px) translateX(0px);}
+    65%   {transform: translateY(0px) translateX(0px);}
+    67.5% {transform: translateY(0px) translateX(0px);}
+    70%   {transform: translateY(0px) translateX(0px);}
+    72.5% {transform: translateY(0px) translateX(0px);}
+    75% {transform: translateY(0px) translateX(0px);}
+    77.5% {transform: translateY(0px) translateX(0px);}
+    80% {transform: translateY(0px) translateX(0px);}
+    82.5% {transform: translateY(0px) translateX(0px);}
+    85% {transform: translateY(0px) translateX(0px);}
+    87.5% {transform: translateY(0px) translateX(0px);}
+    90% {transform: translateY(0px) translateX(0px);}
+    92.5% {transform: translateY(0px) translateX(0px);}
+    95% {transform: translateY(0px) translateX(0px);}
+    97.5% {transform: translateY(0px) translateX(0px);}
+    100%{transform: translateY(0px) translateX(0px);}
+    

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <svg width ="620px" height="200px" style="border:1px solid black">
+    <rect id="element1"  x="50"   y="75" rx="5" ry="5" width="50" height="50" fill="red"></rect>
+    <rect id="element2"  x="100"  y="75" rx="5" ry="5" width="50" height="50" fill="yellow"></rect>
+    <rect id="element3"  x="150" y="75" rx="5" ry="5" width="50" height="50" fill="blue"></rect>
+    <rect id="element4"  x="200" y="75" rx="5" ry="5" width="50" height="50" fill="orange"></rect>
+    <rect id="element5"  x="250" y="75" rx="5" ry="5" width="50" height="50" fill="purple"></rect>
+    <rect id="element6"  x="300" y="75" rx="5" ry="5" width="50" height="50" fill="green"></rect>
+    <rect id="element7"  x="350" y="75" rx="5" ry="5" width="50" height="50" fill="brown"></rect>
+    <rect id="element8"  x="400" y="75" rx="5" ry="5" width="50" height="50" fill="pink"></rect>
+    <rect id="element9"  x="450" y="75" rx="5" ry="5" width="50" height="50" fill="orange"></rect>
+    <rect id="element10" x="500" y="75" rx="5" ry="5" width="50" height="50" fill="crimson"></rect>
+    
+    
+    </svg>
+<script>
+    var element1=document.getElementById("element1");
+    var element5=document.getElementById("element5");
+    var reqID; 
+    function animate(){
+    while(element5.y.baseVal.value>25) {   
+    element5.y.baseVal.value --;
+    reqID = window.requestAnimationFrame(animate);
+    }
+    while(element5.x.baseVal.value<400) {   
+    element5.x.baseVal.value ++;
+    reqID = window.requestAnimationFrame(animate);
+}
+    }
+reqID = window.requestAnimationFrame(animate);
+</script>
+</body>
+</html>

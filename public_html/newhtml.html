@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+#object1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: blue;
+    float:left;
+}
+#object2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: green;
+    float:left;
+    animation-iteration-count: 2;
+}
+#object3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: red;
+    float:left;
+}
+#object4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: purple;
+    float:left;
+}
+#object5 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: orange;
+    float:left;
+}
+#object6 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: brown;
+    float:left;
+    
+}
+#object7 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: pink;
+    float:left;
+}
+#object8 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: tomato;
+    float:left;
+}
+#object9 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: indigo;
+    float:left;
+}
+#object10 {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background: mediumspringgreen;
+    float:left;
+     
+}    
+#vacuum {
+    height: 200px;
+    
+}
+#vacuum2 {
+    height: 1000px;
+    width: 100px;
+    float: left;
+}
+
+button {
+    height: 50px;
+    width: 65px;
+    background-color: crimson;
+    color: white;
+    border-radius: 2px;
+    margin-left: 60px;
+        
+}
+
+
+@keyframes animation1 {
+    0%   {transform: translateY(0px) translateX(0px);}
+    33%  {transform: translateY(-70px) translateX(0px);}
+    66%  {transform: translateY(-70px) translateX(-200px);}
+    100% {transform: translateY(-70px) translateX(-150px);}    
+}
+@keyframes animation2 {
+    0% {transform: translateY(0px) translateX(0px);}
+    100% {transform: translateY(70px) translateX(0px);}
+}
+@keyframes animation3 {
+    0% {transform: translateY(-70px) translateX(-150px);}
+    100% {transform: translateY(-70px) translateX(250px);}
+}
+@keyframes animation4 {
+    0% {transform: translateY(0px) translateX(0px);}
+    33% {transform: translateY(70px) translateX(0px);}
+    66% {transform: translateY(70px) translateX(-400px);}
+    100% {transform: translateY(0px) translateX(-400px);}    
+}
+@keyframes animation5 {
+    0% {transform: translateY(70px) translateX(0px);}
+    50% {transform: translateY(70px) translateX(400px);}
+    100% {transform: translateY(0px) translateX(400px);}
+}
+@keyframes animation6 {
+    0% {transform: translateY(-70px) translateX(250px);}
+    50% {transform: translateY(-70px) translateX(200px);}
+    100% {transform: translateY(-70px) translateX(150px);}
+}
+@keyframes animation7 {
+    0% {transform: translateY(0px) translateX(0px);}
+    100% {transform: translateY(70px) translateX(0px);}
+}
+@keyframes animation8 {
+    0% {transform: translateY(-70px) translateX(-200px);}
+    50% {transform: translateY(-70px) translateX(-150px);}
+    100% {transform: translateY(-70px) translateX(-100px);}
+}
+@keyframes animation9 {
+    0% {transform: translateY(0px) translateX(0px);}
+    100% {transform: translateY(70px) translateX(0px);}
+}
+@keyframes animation10 {
+    0% {transform: translateY(70px) translateX(0px);}
+    50% {transform: translateY(70px) translateX(-250px);}
+    100% {transform: translateY(0px) translateX(-250px);}
+}
+@keyframes animation11 {
+    0% {transform: translateY(70px) translateX(0px);}
+    50% {transform: translateY(70px) translateX(250px);}
+    100% {transform: translateY(0px) translateX(250px);}
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div id="vacuum"></div>
+<div id="vacuum2"></div>
+   <div id="object1"></div>
+   <div id="object2"></div>
+   <div id="object3"></div>
+   <div id="object4"></div>
+   <div id="object5"></div>
+   <div id="object6"></div>
+   <div id="object7"></div>
+   <div id="object8"></div>
+   <div id="object9"></div>
+   <div id="object10"></div>
+   <button onclick="function1()">Click Mom :)</button>
+   
+   <script>
+    object1 = document.getElementById("object1");
+    object2 = document.getElementById("object2");
+    object3 = document.getElementById("object3");
+    object4 = document.getElementById("object4");
+    object5 = document.getElementById("object5");
+    object6 = document.getElementById("object6");
+    object7 = document.getElementById("object7");
+    object8 = document.getElementById("object8");
+    object9 = document.getElementById("object9");
+    object10 = document.getElementById("object10");
+    
+    function function1() {
+        object5.style.animation="animation1 2s ease 1 normal running 0s forwards";
+        object5.addEventListener("animationend", function2);
+    }
+    function function2() {
+        object2.style.animation="animation2 2s ease 1 normal running 0s forwards";
+        object2.addEventListener("animationend", function3);
+    }
+    function function3() {
+        object5.style.animation="animation3 2s ease 1 normal running 0s forwards";
+        object5.addEventListener("animationend", function4);
+    }
+    function function4() {
+        
+        object10.style.animation="animation4 2s ease 1 normal running 0s forwards";
+        object10.addEventListener("animationend", function5);
+    }
+    function function5() {
+        object2.style.animation="animation5 2s ease 1 normal running 0s forwards";
+        object2.addEventListener("animationend", function6);   
+    }
+    
+    function function6() {
+        object5.style.animation="animation6 2s ease 1 normal running 0s forwards";
+        object5.addEventListener("animationend", function7);
+    }
+    function function7() {
+        object8.style.animation="animation7 2s ease 1 normal running 0s forwards";
+        object8.addEventListener("animationend", function8);
+    }
+    
+    function function8() {
+        object5.style.animation="animation8 2s ease 1 normal running 0s forwards";
+        object5.addEventListener("animationend", function9);
+    }
+    function function9() {
+        object4.style.animation="animation9 2s ease 1 normal running 0s forwards";
+        
+    }
+        
+        
+        
+        
+    
+    
+    
+    
+   </script>
+</body>
+</html>

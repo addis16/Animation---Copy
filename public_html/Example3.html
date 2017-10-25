@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    #box1 {
+        width:100px;
+        height: 100px;
+        background-color: orange;
+    }     
+    
+</style>
+</head>
+<body>
+    <div id="box1"></div>
+    <script>
+        var box1 = document.getElementById("box1");
+        box1.style.transition="width 1s ease 0s";
+        box1.addEventListener( "transitionend", function() {
+            alert("Transition Ended");
+        })        
+    </script>
+    
+    <p>Width: <input type="number" step="10" onchange=
+        "box1.style.width=this.value+'px'"></p>
+        
+</body>
+</html>
